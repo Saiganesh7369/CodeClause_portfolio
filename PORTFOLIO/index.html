@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/2e5cf3cae5.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="1/logo2.png" class="logo" style="width:100px;height:100px;">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-sharp fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi,I'm<span> Sai Ganesh</span><br>From Hyderabad</h1>
+                <br>
+                <h6>This is my official portfolio website to showes all<br>
+                    Details and work exiprins web development
+                </h6 >
+            </div>
+        </div>
+    </div>  
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="1/User.png" style="width: 300px;">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Chilukuri Sai Ganesh. I am from Hyderabad.I am currently pursuing my B.tech 3rd year in Vardhaman College of Engineering in Information Technology with 8.3 CGPA. 
+                        I am a ambitious and hardworking individual and i use a creative approach to problem solve.I am always energetic and eager to learn new skills.
+                        My strengths are I am self motivated, disciplined, smart and hard working . I always smile and  have positive attitude  towards everything which I feel is my greatest strength.
+                        My hobbies are Playing badminton, learning new languages to code and practicing yoga.
+                        My short term goal is to get placed in a reputed company like yours and my long term goal is to be a part of success of the company, that I work for. 
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        
+                        <p class="tab-links"  onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>C Programming</span><br>80%</li>
+                            <li><span>App Development</span><br>60%</li>
+                            <li><span>Python</span><br>70%</li>
+                            <li><span>Java</span><br>70%</li>
+                            <li><span>MYSql</span><br>75%</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>SSC</span><br>I passed out ssc in 2018 with 87%</li>
+                            <li><span>2018-2020</span><br>Completed my inter in Narayana Junior college with 96%</li>
+                            <li><span>2022(Present)</span><br>3rd year student of Vardhaman COllege of Engineering</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">Portfolio</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Bentley Institue</h2>
+                    <a href="file:///E:/Portfolio/Certificate/Bentley.pdf">Certificate </a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Machine Learning using Python</h2>
+                    <a href="file:///E:/Portfolio/Certificate/Sai%20Ganesh%20Chilukuri%20-%20IEEE-SBPIT-07-8972.pdf">Certificate</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-plus"></i>
+                    <h2>Math work</h2>
+                    <a href="file:///E:/Portfolio/Certificate/Mathwork.pdf">Certificate</a>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>saiganeshchilukuri@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7995687952</p>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://in.linkedin.com/?src=go-pa&trk=sem-ga_campid=14650114788_asid=127961666300_crid=601257986824_kw=www%20linkedin_d=c_tid=kwd-2246447582_n=g_mt=e_geo=9062145_slid=&mcid=6844056167778418689&cid=&gclid=EAIaIQobChMIn8nt-aGN-wIVRdpMAh1OPgVmEAAYASAAEgI6-PD_BwE&gclsrc=aw.ds"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="1/Resume.pdf" download class="btn btn2">Download CV</a>    
+                </div>    
+                <div class="contact-right">
+                    <form >
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname)
+    {
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu()
+    {
+        sidemenu.style.right="0";
+    }
+    function closemenu()
+    {
+        sidemenu.style.right="-200px";
+    }
+</script>
+
+</body>
+</html>
